@@ -14,7 +14,7 @@ public class Rectangle {
         System.out.println("Enter the Breath: ");
         double Breath = in.nextDouble();
 
-        if(Length < 0 && Breath < 0){
+        if(Length < 0 || Breath < 0){
             System.out.println("Length and Breath Cannot Negative ");
             
         }
