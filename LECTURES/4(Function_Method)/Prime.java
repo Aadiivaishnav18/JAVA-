@@ -1,29 +1,34 @@
 import java.util.Scanner;
 
-public class Prime {
+public class Prime{
 
     public static void main(String[] args) {
+
         Scanner in = new Scanner(System.in);
-
-        System.out.println("Enter the Number: ");
         int n = in.nextInt();
-        System.out.println(n + " is Prime Number: " + isPrime(n));
 
+        System.out.println(n + "is the Prime Number" + IsPrime(n));
     }
 
-    static boolean isPrime(int n) {
-        if (n <= 1) {
+
+    static  boolean IsPrime(int n){
+
+        if(n <= 1){
             return false;
         }
 
         int c = 2;
-        while (c * c <= n) {
-            if (n % c == 0) {
-                return false;
+        while(c*c <= n){
+            if(n % c == 0){
+                return false ;
             }
+
             c++;
         }
-        return c * c > n;
+
+        return c*c >n;
 
     }
+
 }
+

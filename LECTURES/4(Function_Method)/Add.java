@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Sum {
+public class Add {
 
     // Method are the block of code that perform a Specific Task
     // Syntax :
